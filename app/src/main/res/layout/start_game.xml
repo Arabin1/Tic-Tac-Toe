@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:minHeight="350dp"
+    android:gravity="center"
+    android:background="@drawable/first_player"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sound"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#5E2525"
+            android:layout_marginEnd="5dp"
+            />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/on"
+            android:textOff="@string/of"
+            android:id="@+id/toggleButtonId"
+            />
+
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/radioGroupId"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_player"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#5E2525"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:text="@string/one_player"
+            android:id="@+id/oneRadioButtonId"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:text="@string/two_players"
+            android:checked="true"
+            android:id="@+id/twoRadioButtonId"
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player1_name"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/player1TextViewId"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_hint"
+            android:id="@+id/player1EditTextId"
+            android:autofillHints="@string/name_hint"
+            android:inputType="textVisiblePassword"
+            android:textSize="15sp"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player2_name"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/player2TextViewId"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_hint"
+            android:id="@+id/player2EditTextId"
+            android:autofillHints="@string/name_hint"
+            android:inputType="textVisiblePassword"
+            android:textSize="15sp"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

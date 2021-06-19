@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:weightSum="5"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:id="@+id/titleTextViewId"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#671212"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:id="@+id/turnTextViewId"
+        android:textStyle="italic"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:background="@drawable/box_border"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            style="@style/boxStyle"
+            android:id="@+id/ticTacTextViewId1"
+            />
+
+       <TextView
+           style="@style/boxStyle"
+           android:id="@+id/ticTacTextViewId2"
+            />
+
+
+       <TextView
+           style="@style/boxStyle"
+           android:id="@+id/ticTacTextViewId3"
+            />
+
+
+       <TextView
+           style="@style/boxStyle"
+           android:id="@+id/ticTacTextViewId4"
+            />
+
+
+       <TextView
+            style="@style/boxStyle"
+            android:id="@+id/ticTacTextViewId5"
+            />
+
+
+       <TextView
+            style="@style/boxStyle"
+            android:id="@+id/ticTacTextViewId6"
+            />
+
+
+       <TextView
+            style="@style/boxStyle"
+            android:id="@+id/ticTacTextViewId7"
+            />
+
+
+       <TextView
+            style="@style/boxStyle"
+            android:id="@+id/ticTacTextViewId8"
+            />
+
+
+       <TextView
+            style="@style/boxStyle"
+            android:id="@+id/ticTacTextViewId9"
+            />
+
+
+    </GridLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/restartButtonId"
+        android:text="@string/restart_game"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

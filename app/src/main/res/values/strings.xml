@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="test">Test</string>
+    <string name="start_game">Start Game</string>
+    <string name="player1_name">Player1 Name :</string>
+    <string name="name_hint">Enter name</string>
+    <string name="player2_name">Player2 Name :</string>
+    <string name="_1">1</string>
+    <string name="two_players">Two</string>
+    <string name="one_player">One</string>
+    <string name="select_player">Select Player : </string>
+    <string name="your_name">Your Name : </string>
+    <string name="sound">Sound :</string>
+    <string name="on">ON</string>
+    <string name="of">OF</string>
+    <string name="help">Help?</string>
+    <string name="about">About</string>
+    <string name="game_description">
+        This is a simple game called Tic-Tac-Toe.\n\n
+
+        If you can match three boxes in a row, column or in
+        a corner before other player, you will win.
+    </string>
+    <string name="my_picture">my picture</string>
+
+    <string name="about_me">Md. Asaduzzaman Arabin,\nDepartment of EEE,\n2017-18 Session,\nRajshahi University</string>
+    <string name="_indicator">This is a indicator</string>
+    <string name="restart_game">Restart Game</string>
+
+</resources>
